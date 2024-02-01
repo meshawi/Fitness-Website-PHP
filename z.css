@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    height: auto; /* Adjusted to auto to accommodate full page content */
+    min-height: 100vh; /* Ensures at least full viewport height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("images/hero-bg.jpg") no-repeat center center fixed; /* Fixed background */
+    background-size: cover; /* Ensure background covers the entire viewport */
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    padding: 0 10px;
+    z-index: 10; /* Adjust z-index as needed */
+    /* Removed 'position: fixed;' to make the header static */
+}
+
+.list-box {
+    text-align: left;
+    width: 35%;
+    color: white;
+    text-shadow: #000000;
+  }
+  form {
+    background: #1f1414;
+    color: #d9d9d9;
+    padding: 1rem 0.5rem 2rem 0.5rem;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 32px;
+    width: 35%;
+    box-shadow: 0 0 3px #000000;
+  }
+  
+  input {
+    width: 90%;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 0.6rem;
+  }
+  .navbar .login-btn {
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #275360;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.navbar .login-btn:hover {
+    background: #ddd;
+}
+
+
+  .btn {
+    cursor: pointer;
+    margin-top: 1.25rem;
+    padding: 0.6rem 2rem;
+    border-radius: 16px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    box-shadow: 0 0 3px #000000;
+  }
+  
+  .btn-blue {
+    background: #14426d;
+  }
+  
+
+  
+  .page {
+    padding: 4rem 15% 4rem 15%;
+    text-align: center;
+  }
+ 
+  
+  
+  
+  .page-light h1 {
+    color: #ffffff;
+    text-align: center;
+  }
+  .page-light p{
+    color: white;
+    text-align: center;
+  }
+  .list-box {
+    text-align: left;
+    width: 35%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: baseline;
+  }
+  
+
+  
+  #bmi-result,
+  #calorie-result {
+    padding: 0.5rem;
+    font-weight: normal;
+    background: #14426d;
+    box-shadow: 0 0 4px #000000;
+    border-radius: 12px;
+    color: #ffffff;
+  }
+
+  
+.navbar {
+    display: flex;
+    padding: 22px 0;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  
+  .navbar .hamburger-btn {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .navbar .links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .navbar .links a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.1s ease;
+  }
+  
+  .navbar .links a:hover {
+    color: #19e8ff;
+  }
+  
+  @media (max-width: 950px) {
+    .navbar :is(.hamburger-btn, .close-btn) {
+      display: block;
+    }
+  
+    .navbar {
+      padding: 15px 0;
+    }
+  
+    .navbar .links {
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      left: -100%;
+      display: block;
+      height: 100vh;
+      width: 100%;
+      padding-top: 60px;
+      text-align: center;
+      background: #fff;
+      transition: 0.2s ease;
+    }
+  
+    .navbar .links.show-menu {
+      left: 0;
+    }
+  
+    .navbar .links a {
+      display: inline-flex;
+      margin: 20px 0;
+      font-size: 1.2rem;
+      color: #000;
+    }
+  
+    .navbar .links a:hover {
+      color: #00bcd4;
+    }
+  }
+  
+
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+.list-box {
+  text-align: left;
+  width: 35%;
+  color: white;
+  text-shadow: #000000;
+}
+form {
+  background: #1f1414;
+  color: #d9d9d9;
+  padding: 1rem 0.5rem 2rem 0.5rem;
+  text-align: center;
+  margin: 2rem;
+  border-radius: 32px;
+  width: 35%;
+  box-shadow: 0 0 3px #000000;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+}
+
+select {
+  width: 90%;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+}
+
+label {
+  margin-bottom: 0.6rem;
+  margin-right: 0.4rem;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.25rem;
+  padding: 0.6rem 2rem;
+  border-radius: 16px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  box-shadow: 0 0 3px #000000;
+}
+
+.btn-blue {
+  background: #14426d;
+}
+.btn-blue:hover {
+  background: #191a1d;
+  border: 1px solid #177ddc;
+}
+
+.btn-dark {
+  background: #191a1d;
+}
+
+.btn-dark:hover {
+  background: #c9c9c9;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.page {
+  padding: 4rem 15% 4rem 15%;
+  text-align: center;
+}
+
+.page-dark {
+  color: #ffffff;
+}
+.page-dark h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.list-box {
+  text-align: left;
+  width: 35%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: baseline;
+}
+
+#bmi-result,
+#calorie-result {
+  padding: 0.5rem;
+  font-weight: normal;
+  background: #14426d;
+  box-shadow: 0 0 4px #000000;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+#exercise-container {
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px; /* You can adjust this width as needed */
+    width: 100%; /* Makes it responsive */
+    margin: auto; /* Centers the container */
+    padding: 20px; /* Add padding for better appearance */
+    text-align: center; /* Centers the text */
+}
+
+.exercise-container h1{
+    background-color: #2196F3;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.h1ss{
+    background-color: #2196F3;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+#exerciseSelect {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 20px;
+    font-size: 16px;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#exerciseSelect:hover {
+    border-color: #0D47A1;
+}
+.l1ss {
+    color: white;
+
+}
+#showExercise {
+    background-color: #2196F3;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#showExercise:hover {
+    background-color: #000000;
+}
+
+#exercise-description {
+    padding: 20px;
+    text-align: left;
+    color: white;
+
+}
+
+h2 {
+    color: #2196F3;
+}
+
+#exercisePic {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    max-height: 981px;
+    margin-bottom: 20px;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #000;
+    object-fit: contain;
+}
+
+
+/* STYLES */
+
+.Aboutus {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks flex items vertically */
+    justify-content: center; /* Centers content vertically in the container */
+    align-items: center; /* Centers content horizontally in the container */
+    width: 100%;
+    padding: 20px; /* Add padding for better appearance */
+    margin-bottom: 20%; /* Add padding for better appearance */
+    margin-top: 20%; /* Add padding for better appearance */
+    box-sizing: border-box; /* Ensures padding doesn't affect the overall width/height */
+    text-align: center; /* Aligns text to the center */
+    color: white;
+
+}
+footer {
+  background-color: #333;
+  color: red;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  margin: auto;
+  font-size: 14px;
+}
